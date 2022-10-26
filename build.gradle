@@ -20,6 +20,15 @@ group = 'com.jojoidu.book'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '17'
 
+jar {
+    manifest {
+        attributes 'Main-Class': 'api.KotlinSpringJpaPostgresqlApplicationKt'
+    }
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
 repositories {
     mavenCentral()
 }

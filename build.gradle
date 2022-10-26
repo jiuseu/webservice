@@ -16,7 +16,7 @@ apply plugin : 'eclipse'
 apply plugin : 'org.springframework.boot'
 apply plugin : 'io.spring.dependency-management'
 apply plugin : 'application'
-mainClassName = 'com.jojoldu.book.springboot'
+mainClassName = 'com.jojoldu.book.springboot.Application'
 
 group = 'com.jojoidu.book'
 version = '0.0.1-SNAPSHOT'

@@ -2,6 +2,9 @@ language: java
 jdk:
   - openjdk 17
 
+before_install:
+  - chmod +x gradlew
+
 branches:
   only:
   - master
@@ -10,7 +13,7 @@ branches:
 cache:
   directories:
     - '$HOME/.m2/repository'
-    - '$HOME/.gradlew'
+    - '$HOME/.gradle'
 
 script: "./gradlew clean build"
 

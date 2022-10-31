@@ -39,8 +39,8 @@ deploy:
     bucket: leehyunwoo-springboot-build
     key: webervice.zip
     bundle_type: zip
-    application: leehyunwoo-springboot-webervice
-    deployment_group: leehyunwoo-springboot-webervice-group
+    application: leehyunwoo-springboot-webservice
+    deployment_group: leehyunwoo-springboot-webservice-group
     region: ap-northeast-2
     wait-until-deployed: true
 

@@ -1,13 +1,13 @@
 language: java
 jdk:
-  - openjdk15
-
-branches:
-  only:
-  - master
+  - openjdk17
 
 before_install:
   - chmod +x gradlew
+  -
+branches:
+  only:
+  - master
 
 #Travis CI 서버의 Home
 cache:

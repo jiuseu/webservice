@@ -30,6 +30,7 @@ deploy:
     deployment_group: leehyunwoo-springboot-webervice-group
     region: ap-northeast-2
     wait-until-deployed: true
+
 branches:
   only:
   - master

@@ -1,6 +1,6 @@
 language: java
 jdk:
-  - openjdk11
+  - openjdk 17
 
 before_install:
   - chmod +x gradlew

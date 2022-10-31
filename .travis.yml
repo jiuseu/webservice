@@ -12,8 +12,8 @@ before_deploy:
 
 deploy:
   - provider: s3
-    access_key_id: $AKIAQMGPSQ62GXIOZ2OT
-    secret_access_key: $MuUB4kB3CWz3znyJd/4KDUqTWa1g0z0QqepZd1DK
+    access_key_id: AKIAQMGPSQ62GXIOZ2OT
+    secret_access_key: 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
     bucket: leehyunwoo-springboot-build
     region: ap-northeast-2
     skip_cleanup: true

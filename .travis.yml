@@ -2,9 +2,6 @@ language: java
 jdk:
   - openjdk 17
 
-before_install:
-  - chmod +x gradlew
-
 branches:
   only:
   - master

@@ -1,10 +1,10 @@
 language: java
 jdk:
-  - openjdk11
+  - openjdk17
 
 branches:
   only:
-  - master
+  - githube
 
 #Travis CI 서버의 Home
 cache:

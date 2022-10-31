@@ -4,10 +4,9 @@ jdk:
 
 before_install:
   - chmod +x gradlew
-  -
 branches:
   only:
-  - githube/master
+  - master
 
 #Travis CI 서버의 Home
 cache:

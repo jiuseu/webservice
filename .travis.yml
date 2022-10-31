@@ -5,6 +5,18 @@ jdk:
 before_install:
   - chmod +x gradlew
 
+branches:
+  only:
+    - master
+
+#Travis CI 서버의 Home
+cache:
+  directories:
+    - '$HOME/.m2/repository'
+    - '$HOME/.gradle'
+
+script: "./gradlew clean build"
+
 before_deploy:
   - zip -r webservice *
   - mkdir -p deploy
@@ -25,23 +37,12 @@ deploy:
     access_key_id: AKIAQMGPSQ62GXIOZ2OT
     secret_access_key: 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
     bucket: leehyunwoo-springboot-build
+    key: webservice.zip
     bundle_type: zip
     application: leehyunwoo-springboot-webervice
     deployment_group: leehyunwoo-springboot-webervice-group
     region: ap-northeast-2
     wait-until-deployed: true
-
-branches:
-  only:
-  - master
-
-#Travis CI 서버의 Home
-cache:
-  directories:
-    - '$HOME/.m2/repository'
-    - '$HOME/.gradle'
-
-script: "./gradlew clean build"
 
 #CI 실행 완료 시 메일로 알람
 notifications:

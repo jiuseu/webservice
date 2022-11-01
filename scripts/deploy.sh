@@ -4,6 +4,8 @@
 REPOSITORY=/home/ec2-user/app/step2
 PROJECT_NAME=webservice
 
+cd $REPOSITORY/$PROJECT_NAME
+
 # build의 결과물 (jar 파일) 특정 위치로 복사
 echo "> build 파일 복사"
 cp $REPOSITORY/zip/*.jar $REPOSITORY/

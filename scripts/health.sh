@@ -37,4 +37,3 @@ do
   echo "> Health Check 연결 실패. 재시도..."
   sleep 10
 done
-nohup java -jar /home/ec2-user/deploy/build/libs/aws-exercise-0.0.1-SNAPSHOT.jar /dev/null 2> /dev/null < /dev/null &

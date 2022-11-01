@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 자주 사용하는 값 변수에 저장
-REPOSITORY=/home/ec2-user/app/step3
+REPOSITORY=/home/ec2-user/app/step2
 PROJECT_NAME=webservice
 
 cd $REPOSITORY/$PROJECT_NAME
